@@ -1,2 +1,7 @@
 
 .footer-quote{ display:block; margin-top:8px; color:var(--muted); font-size:.95em }
+
+/* Background art */
+body.bg-art{ background: var(--bg); }
+body.bg-art::before{ content:""; position:fixed; inset:0; z-index:-1; background:url("assets/website_image.webp") center/cover no-repeat; opacity:.35; pointer-events:none; }
+@media (prefers-color-scheme: dark){ body.bg-art::before{ opacity:.40; } }
