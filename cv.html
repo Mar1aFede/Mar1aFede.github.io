@@ -8,8 +8,8 @@
   <meta name="color-scheme" content="light dark">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#FDF5BF; --fg:#0f172a; --muted:#8BB8A8; --link:#B47EB3; --card:#FFD5FF; --border:#92D1C3; }
-    @media (prefers-color-scheme: dark){ :root{ --bg:#1f172a; --fg:#FDF5BF; --muted:#5E8E7C; --link:#D19AD4; --card:#3B233B; --border:#3A6E61; } }
+    :root { --bg:#f0f4f8; --fg:#1e293b; --muted:#64748b; --link:#3b82f6; --card:#e2e8f0; --border:#cbd5e1; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0f172a; --fg:#f1f5f9; --muted:#94a3b8; --link:#93c5fd; --card:#1e293b; --border:#334155; } }
     *{ box-sizing:border-box }
     body{ margin:0; font-family:'Lora', serif; background:var(--bg); color:var(--fg); line-height:1.6 }
     a{ color:var(--link) }
@@ -18,7 +18,7 @@
     header h1{ margin:0 0 6px; font-size:clamp(24px,4vw,36px) }
     nav{ border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:var(--card); max-width:1000px; margin:auto; padding:10px 20px; display:flex; flex-wrap:wrap; gap:12px }
     nav a{ text-decoration:none; color:var(--fg); padding:6px 10px; border-radius:8px }
-    nav a:hover{ background:var(--border) }
+    nav a:hover{ background:var(--muted); color:var(--bg) }
     main{ max-width:1000px; margin:auto; padding:28px 20px; display:grid; gap:36px }
     section{ padding:20px; border:1px solid var(--border); border-radius:14px; background:var(--card) }
     h2{ margin:0 0 8px; font-size:1.25rem }
