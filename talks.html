@@ -7,41 +7,25 @@
   <meta name="description" content="Talks and workshops by Maria Federica Norelli." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🪶</text></svg>">
   <meta name="color-scheme" content="light dark">
-  <style>
-    :root { --bg:#ffffff; --fg:#0f172a; --muted:#64748b; --link:#1f6feb; --card:#f8fafc; --border:#e2e8f0; }
-    @media (prefers-color-scheme: dark){ :root{ --bg:#0b0f14; --fg:#e6edf3; --muted:#9aa4af; --card:#0f141b; --border:#1f2937; } }
-    *{ box-sizing:border-box }
-    body{ margin:0; font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial; background:var(--bg); color:var(--fg); line-height:1.6 }
-    header{ max-width:1000px; margin:auto; padding:32px 20px; display:flex; gap:18px; align-items:center; justify-content:space-between }
-    .brand{ display:flex; gap:16px; align-items:center }
-    .brand img{ width:80px; height:80px; object-fit:cover; border-radius:50%; border:1px solid var(--border) }
-    .brand h1{ margin:0; font-size:clamp(22px,3vw,30px) }
-    .badge{ display:inline-block; padding:2px 8px; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--muted); margin-left:8px }
-    nav{ border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:var(--card) }
-    nav .row{ max-width:1000px; margin:auto; padding:10px 20px; display:flex; gap:12px; flex-wrap:wrap }
-    nav a{ text-decoration:none; color:var(--fg); padding:6px 10px; border-radius:8px }
-    nav a:hover{ background:var(--border) }
-    main{ max-width:1000px; margin:auto; padding:28px 20px; display:grid; gap:24px }
-    section{ padding:18px; border:1px solid var(--border); border-radius:14px; background:var(--card) }
-    h2{ margin:0 0 8px; font-size:1.25rem }
-    h3{ margin:0 0 6px; font-size:1.05rem }
-    ul{ margin:8px 0; padding-left:18px }
-    .muted{ color:var(--muted) }
-    footer{ border-top:1px solid var(--border); color:var(--muted); text-align:center; padding:20px }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="brand">
-      <img src="https://github.com/Mar1aFede.png" alt="Portrait of Maria Federica Norelli" />
-      <div>
-        <h1>Talks — Maria Federica Norelli <span class="badge">PhD Candidate</span></h1>
-        <p class="muted"><a href="index.html">← Home</a></p>
+    <div class="container">
+      <div class="brand">
+        <img src="https://github.com/Mar1aFede.png" alt="Portrait of Maria Federica Norelli" />
+        <div>
+          <h1 class="title">Talks — Maria Federica Norelli <span class="badge">PhD Candidate</span></h1>
+          <p class="muted"><a href="index.html">← Home</a></p>
+        </div>
       </div>
     </div>
   </header>
 
-  <nav>
+  <nav class="sticky">
     <div class="row">
       <a href="index.html#about">Home</a>
       <a href="research.html">Research</a>
@@ -53,52 +37,41 @@
   </nav>
 
   <main>
-    <section>
-      <h2>2025</h2>
-      <ul>
-        <li><strong>Amplifying Humanities Research with AI and Network Science Methods</strong>, Workshop — NU London (London), <em>7 May 2025</em> — speaker. <!-- CV --> </li>
-        <li><strong>Sparsity, Generalization, and Winning Tickets of Deep Neural Networks: The Noise-Cancelling Razor of Machine Learning</strong>, <em>10th Biennial Meeting of the European Philosophy of Science Association (EPSA)</em> — Groningen, Netherlands, <em>27–30 Aug 2025</em> — speaker. <!-- CV --> </li>
-      </ul>
-    </section>
+    <div class="container">
+      <section class="card">
+        <h2 class="subtitle">2025</h2>
+        <ul>
+          <li><strong>Amplifying Humanities Research with AI and Network Science Methods</strong>, Workshop — NU London (London), <em>7 May 2025</em> — speaker. <!-- CV --> </li>
+          <li><strong>Sparsity, Generalization, and Winning Tickets of Deep Neural Networks: The Noise-Cancelling Razor of Machine Learning</strong>, <em>10th Biennial Meeting of the European Philosophy of Science Association (EPSA)</em> — Groningen, Netherlands, <em>27–30 Aug 2025</em> — speaker. <!-- CV --> </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>2024</h2>
-      <ul>
-        <li><strong>The Interplay of Data, Phenomena and Models</strong>, <em>29th Biennial Meeting of the Philosophy of Science Association (PSA 2024)</em> — New Orleans, USA, <em>14–17 Nov 2024</em> — speaker. <!-- CV --> </li>
-        <li><strong>Human and Network Sciences Bootcamp</strong> — NU London (London), <em>Oct 2024</em> — speaker. <!-- CV --> </li>
-        <li><strong>AI in Action Bootcamp</strong> — NU London (London), <em>May 2024</em> — speaker. <!-- CV --> </li>
-        <li><strong>Addressing Contemporary Human Security Threats: Conversations on Climate, Conflict, Technology, Identity, and Health</strong>, PhD Symposium — NU London (London), <em>May 2024</em> — poster presenter. <!-- CV --> </li>
-        <li><strong>Theoretical Reasoning Research Cluster</strong> — Centre for Reasoning, University of Kent (Canterbury), <em>Mar 2024</em> — speaker. <!-- CV --> </li>
-      </ul>
-    </section>
+      <section class="card">
+        <h2 class="subtitle">2024</h2>
+        <ul>
+          <li><strong>The Interplay of Data, Phenomena and Models</strong>, <em>29th Biennial Meeting of the Philosophy of Science Association (PSA 2024)</em> — New Orleans, USA, <em>14–17 Nov 2024</em> — speaker. <!-- CV --> </li>
+          <li><strong>Human and Network Sciences Bootcamp</strong> — NU London (London), <em>Oct 2024</em> — speaker. <!-- CV --> </li>
+          <li><strong>AI in Action Bootcamp</strong> — NU London (London), <em>May 2024</em> — speaker. <!-- CV --> </li>
+          <li><strong>Addressing Contemporary Human Security Threats: Conversations on Climate, Conflict, Technology, Identity, and Health</strong>, PhD Symposium — NU London (London), <em>May 2024</em> — poster presenter. <!-- CV --> </li>
+          <li><strong>Theoretical Reasoning Research Cluster</strong> — Centre for Reasoning, University of Kent (Canterbury), <em>Mar 2024</em> — speaker. <!-- CV --> </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>2023</h2>
-      <ul>
-        <li><strong>The Use of Colour Names Over Repeated Trials</strong>, <em>CdC Color Conference</em> — Gruppo del Colore, Lecco (Lake Como), Italy, <em>15–16 Sep 2023</em> — speaker. <!-- CV --> </li>
-        <li><strong>Data, Phenomena and Models in Machine Learning</strong>, <em>5th “Philosophy of Artificial Intelligence” (Society for the Philosophy of AI)</em> — Erlangen, Germany, <em>15–16 Dec 2023</em> — poster presenter. <!-- CV --> </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>2022</h2>
-      <ul>
-        <li><strong>Cultural Differences in the Cognitive Aspects of Colour Geometry</strong>, <em>Wittgenstein and AI — 11th British Wittgenstein Society Conference</em>, New College of the Humanities (London), <em>29–31 Jul 2022</em> — speaker. <!-- CV --> </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>2021</h2>
-      <ul>
-        <li><strong>Democrazia e Opinione Pubblica. Cos’è la Post-Verità?</strong>, <em>Dialoghi Etici</em>, patrocinio del Comune di Contursi Terme (SA), <em>24 Apr 2021</em> — speaker. <!-- CV --> </li>
-      </ul>
-    </section>
+      <section class="card">
+        <h2 class="subtitle">2023</h2>
+        <ul>
+          <li><strong>The Use of Colour Names Over Repeated Trials</strong>, <em>CdC Color Conference</em> — Gruppo del Colore, Lecco (Lake Como), Italy, <em>15–16 Sep 2023</em> — speaker. <!-- CV --> </li>
+          <li><strong>Data, Phenomena and Models in Machine Learning</strong>, <em>5th “Philosophy of Artificial Intelligence” (Society for the Philosophy of AI)</em> — Erlangen, Germany, <em>15–16 Dec 2023</em> — poster presenter. <!-- CV --> </li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer>
-    © <span id="y"></span> Maria Federica Norelli · Hosted on GitHub Pages
+    <div class="container">
+      © <span id="y"></span> Maria Federica Norelli · Hosted on GitHub Pages
+    </div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
