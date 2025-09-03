@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Mar1aFede.github.io/sitemap.xml
